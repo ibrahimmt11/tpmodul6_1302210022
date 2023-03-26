@@ -39,7 +39,7 @@ namespace tpmodul6_1302210022
                 {
                     if (count > 10000000 || count < 0)
                     {
-                        throw new ArgumentException("Input penambahan play count maksimal 10.000.000 per panggilan 0.");
+                        throw new OverflowException("Play count tidak boleh lebih dari 10.000.000 atau kurang dari 0.");
                     }
                     playcount += count;
                 }
